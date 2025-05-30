@@ -1,0 +1,38 @@
+/* Footer Main Style */
+.Footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;            /* White text */
+  padding: 20px 40px;
+  font-size: 14px;
+  flex-wrap: wrap;
+}
+
+/* Footer Text Spacing */
+.Footer p {
+  margin: 5px 0;
+  max-width: 250px;
+}
+
+/* Horizontal Line */
+hr {
+  border: none;
+  height: 1px;
+  background-color: #333;
+  margin: 0;
+}
+
+/* Mobile Responsive Footer */
+@media (max-width: 600px) {
+  .Footer {
+    flex-direction: row;
+    text-align: center;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .Footer p {
+    max-width: 100%;
+  }
+}

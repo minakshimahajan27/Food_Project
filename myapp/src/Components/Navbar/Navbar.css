@@ -1,0 +1,111 @@
+.Navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0 22px 100px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo p {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+/* Menu list */
+.list {
+  display: flex;
+}
+
+.list ul {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  font-weight: 400;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Style all links inside list */
+.list a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.list a:hover {
+  color: #ff6347; /* Tomato hover color */
+}
+
+/* Button */
+.menu-button button {
+  border-radius: 17px;
+  padding: 10px 15px;
+  font-size: 11px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff6347;
+  color: white;
+  transition: background 0.3s ease;
+}
+
+.menu-button button:hover {
+  background-color: #e5533d;
+}
+
+/* Divider shadow */
+.div {
+  height: 1.3px;
+  width: 90%;
+  background-color: black;
+  margin: 0 auto;
+  box-shadow: 2px 0px 12px 1px rgb(95, 94, 94);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: black;
+  transition: all 0.3s ease;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .list {
+    display: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .list.active {
+    display: block;
+  }
+
+  .list ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .menu-button {
+    display: none;
+  }
+}

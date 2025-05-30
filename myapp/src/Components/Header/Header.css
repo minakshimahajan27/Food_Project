@@ -1,0 +1,93 @@
+/* /* Header.css */
+
+body {
+  background-image: url(background.svg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.Header {
+  display: flex;
+  flex-wrap: wrap; /* Makes content wrap on smaller screens */
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.img1,
+.img2,
+.img4 {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional: Specific sizes for desktop */
+.img1 {
+  height: 300px;
+}
+
+.img2 {
+  height: 150px;
+}
+
+.img4 {
+  height: 300px;
+}
+
+.Header p {
+  font-size: 3rem;
+  font-family: cursive;
+  margin: 0;
+}
+
+p {
+  margin-bottom: 2px;
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .Header {
+    gap: 40px;
+  }
+
+  .Header p {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .Header p {
+    font-size: 2rem;
+  }
+
+  .img1,
+  .img2,
+  .img4 {
+    height: auto;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .Header p {
+    font-size: 1.5rem;
+  }
+
+  .img1,
+  .img2,
+  .img4 {
+    width: 100%;
+  }
+}

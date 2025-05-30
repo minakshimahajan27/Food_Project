@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #f5e8f3, #ffffff);
+}
+
+/* Main container */
+.container {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  height: 100vh;
+  padding-inline: 200px;
+  margin-top: -100px;
+  margin-bottom: -90px;
+}
+
+/* Image Styling */
+.container img {
+  width: 350px;
+  height: auto;
+
+  
+}
+
+/* Form Container */
+.container1 {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(216, 143, 255, 0.4);
+  width: 300px;
+}
+
+/* Header Text */
+.header {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* Paragraph */
+.container1 p {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Groups */
+.text, .date_time {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+input[type="email"] {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid black;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+input[type="email"]:focus {
+  outline: none;
+  border-color: #a34de2;
+  border-bottom: 2px solid black;
+  box-shadow: 0 0 5px rgba(163, 77, 226, 0.5);
+}
+
+/* Reserve Button */
+.container1 button {
+  margin-top: 15px;
+  width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container1 button:hover {
+  background-color: #333;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+    margin-block: 30px ;
+  }
+
+  .container img {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .container1 {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+  }
+
+  .text, .date_time {
+    flex-direction: column;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  input[type="time"],
+  input[type="email"] {
+    width: 100%;
+  }
+  
+
+  .container1 button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 18px;
+  }
+
+  .container1 {
+    padding: 20px;
+  }
+
+  .container1 p {
+    font-size: 12px;
+  }
+}
+
+.container button{
+    background-color: #333;
+}

@@ -1,0 +1,96 @@
+
+.About {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+  margin: 0 auto;
+  padding: 40px;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.About1 {
+  padding-bottom: 40px;
+}
+
+.heading {
+  font-size: 50px;
+}
+
+button {
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(183, 216, 245);
+}
+
+img {
+  height: 450px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+/* 📱 Tablet Screens */
+@media (max-width: 1024px) {
+  .About {
+    gap: 100px;
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  img {
+    height: 350px;
+  }
+}
+
+/* 📱 Mobile Screens */
+@media (max-width: 768px) {
+  .About {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .heading {
+    font-size: 30px;
+  }
+
+  .About1 {
+    padding-bottom: 20px;
+  }
+
+  img {
+    height: 300px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  img {
+    height: 250px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}
