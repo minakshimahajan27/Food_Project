@@ -22,13 +22,13 @@ const Reservation=mongoose.model("Reservation",{
   date: String,
   time: String
 })
-app.post('/api/reservation', async (req, res) => {
+app.post('/api/reservation', (req, res) => {
   try {
     const data = new Reservation(req.body);
-    await data.save();
-    res.status(201).send("Reservation saved");
+     data.save();
+    res.send("Reservation saved");
   } catch (error) {
-    res.status(500).send("Error saving reservation");
+    res.send("Error saving reservation");
   }
 });
 const port=3000;

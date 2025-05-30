@@ -50,7 +50,7 @@ return (
             <input type='time' name='time' onChange={handleChange}/>
           </div>
           <input type='email' name='email' onChange={handleChange} placeholder='Email' />
-          <input type='text' name='phone' onChange={handleChange} placeholder='Phone Number' />
+
            <button>RESERVE NOW  &rarr;</button>
         </div>
        </div>
