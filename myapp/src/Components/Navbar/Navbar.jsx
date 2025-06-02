@@ -1,46 +1,4 @@
 
-// import { useState } from 'react';
-// import './Navbar.css';
-
-// export default function Navbar() {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   const toggleMenu = () => {
-//     setMenuOpen(!menuOpen);
-//   };
-
-//   return (
-//     <>
-//       <div className='Navbar'>
-//         <div className='logo'>
-//           <p>ZEESH</p>
-//         </div>
-
-//         <div className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-//           <span></span>
-//           <span></span>
-//           <span></span>
-//         </div>
-
-//         <div className={`list ${menuOpen ? 'active' : ''}`}>
-//           <ul>
-//             <li>HOME</li>
-//             <li>ABOUT US</li>
-//             <li>SERVICES</li>
-//             <li>TEAM</li>
-//             <li>RESERVATION</li>
-//           </ul>
-//         </div>
-
-//         <div className='menu-button'>
-//           <button>OUR MENU</button>
-//         </div>
-//       </div>
-
-//       <div className='div'></div>
-//     </>
-//   );
-// }
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
